@@ -59,3 +59,18 @@ public:
         cout << "Derived class printing" << endl;
     }
 };
+
+void solve() {
+    cout << multiply(3, 2) << endl;
+    cout << multiply("Hello", 3) << endl;
+
+    Complex a(10, 12);
+    Complex b(13, 14);
+    cout << a << endl;
+    cout << b << endl;
+    Complex z = a + b;
+    cout << z << endl;
+
+    Base* bptr = new Derived();
+    bptr->print();
+}
